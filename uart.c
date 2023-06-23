@@ -94,7 +94,6 @@ void uart2_rx_interrupt_init(void)
 	GPIOA->AFR[0] |= (1U<<10);
 	GPIOA->AFR[0] &= ~(1U<<11);
 
-
 	/*Set PA3 mode to alternate function mode*/
 	GPIOA->MODER &=~(1U<<6);
 	GPIOA->MODER |= (1U<<7);
